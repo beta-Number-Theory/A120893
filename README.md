@@ -1,1 +1,1 @@
-# OEIS A120893
+# OEIS A120893 - Implementation in D
