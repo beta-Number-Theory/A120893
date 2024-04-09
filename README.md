@@ -6,9 +6,38 @@ These solutions leverage the standard library [Recurrence](https://dlang.org/lib
 
 ## Using Function in String form
 
+```d
+
+```
+
 ## Using Function in Lambda form
 
+```d
+
+```
+
 ## Using Function in Explicit form
+
+```d
+import std.stdio;
+import std.range;
+
+void main()
+{  
+    // Function in explicit form
+    static size_t efA120893(R)(R state, size_t n)
+    {
+        return 2uL * (2uL * state[n-1] + (-1L) ^^ n) - state[n-2];
+    }
+        
+    auto a120893Rec = recurrence!(efA120893)(1uL, 1uL);
+    
+    auto a120893 = a120893Rec.take(25).array;
+    
+    writeln;
+    a120893.writeln;
+}
+```
 
 ## Output
 
