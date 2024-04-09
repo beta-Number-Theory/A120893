@@ -70,6 +70,8 @@ void main()
 
 ## Alternatives
 
+The following equivalent initial values (3 instead of 2) along with the accordingly adjusted recurrent function lead to the same result and given here for reference.
+
 ```d
 auto a120893Rec = recurrence!("3*a[n-1] + 3*a[n-2] - a[n-3]")(1uL, 1uL, 5uL);
 ```
