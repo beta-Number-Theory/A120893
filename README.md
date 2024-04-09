@@ -1,6 +1,6 @@
 # OEIS [A120893](https://oeis.org/A120893) - Implementations in D
 
-These solutions leverage the standard library [Recurrence](https://dlang.org/library/std/range/recurrence.html) which is under the hood an `infinite forward range`.
+These solutions leverage the standard library [Recurrence](https://dlang.org/library/std/range/recurrence.html) which is under the hood is an `infinite forward range`.
 
 # Source codes
 
