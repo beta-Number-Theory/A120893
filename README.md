@@ -1,12 +1,14 @@
 # OEIS [A120893](https://oeis.org/A120893) - Implementations in D
 
-# Using [Recurrence](https://dlang.org/library/std/range/recurrence.html)
+# Source codes
 
-## Function in String form
+Refer to [Recurrence](https://dlang.org/library/std/range/recurrence.html)
 
-## Function in Lambda form
+## Using Function in String form
 
-## Function in Explicit form
+## Using Function in Lambda form
+
+## Using Function in Explicit form
 
 ## Output
 
