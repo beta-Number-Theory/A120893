@@ -7,12 +7,34 @@ These solutions leverage the standard library [Recurrence](https://dlang.org/lib
 ## Using Function in String form
 
 ```d
+import std.stdio;
+import std.range;
 
+void main()
+{
+    auto a120893Rec = recurrence!"2uL * (2uL * a[n-1] + (-1L) ^^ n) - a[n-2]"(1uL, 1uL);
+        
+    auto a120893 = a120893Rec.take(25).array;
+    
+    writeln;
+    a120893.writeln;
 ```
 
 ## Using Function in Lambda form
 
 ```d
+import std.stdio;
+import std.range;
+
+void main()
+{
+    auto a120893Rec = recurrence!((a,n) => 2uL * (2uL * a[n-1] + (-1L) ^^ n) - a[n-2])(1uL, 1uL);
+        
+    auto a120893 = a120893Rec.take(25).array;
+    
+    writeln;
+    a120893.writeln;
+}
 
 ```
 
