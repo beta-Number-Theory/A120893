@@ -81,10 +81,10 @@ auto a120893Rec = recurrence!((a,n) => 3*a[n-1] + 3*a[n-2] - a[n-3])(1uL, 1uL, 5
 ```
 
 ```d
-    static size_t efA120893(R)(R state, size_t n)
-    {
-        return 3*state[n-1] + 3*state[n-2] - state[n-3];
-    }
+static size_t efA120893(R)(R state, size_t n)
+{
+    return 3*state[n-1] + 3*state[n-2] - state[n-3];
+}
         
-    auto a120893Rec = recurrence!(efA120893)(1uL, 1uL, 5uL);
+auto a120893Rec = recurrence!(efA120893)(1uL, 1uL, 5uL);
 ```
