@@ -1,8 +1,8 @@
 # OEIS [A120893](https://oeis.org/A120893) - Implementations in D
 
-# Source codes
+These solutions leverage the standard library [Recurrence](https://dlang.org/library/std/range/recurrence.html) which is under the hood an `infinite forward range`.
 
-Refer to [Recurrence](https://dlang.org/library/std/range/recurrence.html)
+# Source codes
 
 ## Using Function in String form
 
